@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pomodoro timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+<!-- light/dark mode -->
+<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<div class="ball"></div>
+	</label>
+</div>
+<!-- java 4 light/dark -->
+<script>
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+</script>
+
+
+
+
+
+
+<!-- header-->
+    <header class="header">
+
+    <!-- pomodoro title css animation -->
+    <body2>
+      
+      <div class="wrapper">
+        
+        <ul class="dynamic-txts">
+          <li><span>pomodoro</span></li>
+        </ul>
+      </div>
+    
+    </body2>
+
+
+    <!-- menu icon -->
+    <h1 class="logo">
+      <a href="settings.html"> 
+        <img src = "images/menuicon.png"alt= "menu icon" ></a></h1>
+
+
+
+
+
+
+
+</header> 
+
+<div id="timer">
+    <figure class="clock">
+      <div class="mins">0</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio
+        src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="120" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+      <button class="start">start</button>
+      <button class="reset">reset</button>
+      <button class="pause">pause</button>
+    </div>
+
+    <form action=".">
+      <label for="focusTime">work</label>
+      <input type="number" value="1" id="focusTime" />
+      <label for="breakTime">break</label>
+      <input type="number" value="1" id="breakTime" />
+      <button type="submit">save</button>
+    </form>
+
+  </div>
+    <footer>
+     
+    </footer>
+
+    <script src="settings.js"></script>
+    <script src="timer.js"></script>
+    <script src="progress.js"></script>
+  
+
+
+
+
+
+
+<!-- spotify -->
+<div class="spotify">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/32nCTHyDdztkanmT2b4QIi?utm_source=generator&theme=0" width="250" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+
+</body>
+</html>
