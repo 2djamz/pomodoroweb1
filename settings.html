@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pomodoro timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+ 
+ <div class="settingsmenu" id="nav">
+        <div class="sideimg">
+          <img src="images/lofigirl-gif.gif"alt= "image of lofi girl" >
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li><a href="index.html" data-text="home" >home</a></li>
+            <li><a href="todo.html" data-text="settings">to-do list</a></li>
+            <li><a href="about.html" data-text="about">about</a></li>
+          </ul> 
+        </div>
+    </div>
+  </div>
+<span class=:"menuicon" id="toggle"></span>
+<!-- java for overlay !! -->
+<script>
+function menutoggle() {
+  var nav = document.getElementById('nav')
+  nav.classlist.toggle("active")
+}
+
+</script>
